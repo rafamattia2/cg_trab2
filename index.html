@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Final - CG</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var totalPoints = 0;       
+        var objectPositions = [
+            [-10, 50, -500],
+            [-50, 10, 300],
+            [500, 10, -50],
+            [-300, 10, -800],
+            [-10, 150, 50],
+        ];
+
+        var objs = objectPositions.map((position) => {
+            return {
+                position, visible: true
+            }
+        });
+    </script>
+
+    <canvas class="webgl" id="canvas" width="1420" height="720"></canvas>
+    <div id="uiContainer">
+        <div id="ui">
+          <div id="fRotation"></div>
+          <div id="shininess"></div>
+        </div>
+      </div>
+
+    <script src="https://twgljs.org/dist/4.x/twgl-full.min.js"></script>
+    <script src="https://webglfundamentals.org/webgl/resources/3d-math.js"></script>
+    <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+    <script src="https://webglfundamentals.org/webgl/resources/m4.js"></script>
+    <script src="https://webglfundamentals.org/webgl/resources/primitives.js"></script>
+
+
+    <div class="crosshair"></div>
+
+    <script src="camera.js"></script>
+    <!-- <script src="skybox.js"></script> -->
+    <script src="heightmap.js"></script>
+    <script src="objects.js"></script>
+    <script src="projectile.js"></script>
+    
+    
+</body>
+
+</html>

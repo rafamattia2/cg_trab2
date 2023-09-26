@@ -1,0 +1,25 @@
+@import url("https://webgl2fundamentals.org/webgl/resources/webgl-tutorials.css");
+
+body { 
+  margin: 0; 
+  cursor: none;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.crosshair {
+  width: 24px; /* Largura da crosshair */
+  height: 24px; /* Altura da crosshair */
+  border: 2px solid red; /* Cor e espessura da linha da crosshair */
+  border-radius: 50%; /* Faz a crosshair circular */
+  position: absolute; /* Posição absoluta para seguir o cursor do mouse */
+  top: 50%; /* Posiciona no centro verticalmente */
+  left: 50%; /* Posiciona no centro horizontalmente */
+  margin-top: -12px; /* Move a crosshair para cima a metade da altura */
+  margin-left: -12px; /* Move a crosshair para a esquerda a metade da largura */
+  pointer-events: none; /* Permite que eventos passem por cima da crosshair */
+}
+
